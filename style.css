@@ -132,3 +132,51 @@ section
         transform: scaleX(1);
     }
 }
+.bannerText p
+{
+    opacity: 0;
+    font-weight: 400;
+    font-size: 1.2em;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 5s;
+}
+@keyframes fadeIn
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+.bannerText a
+{
+    opacity: 0;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+    background: #03a9f4;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    border-radius: 3px;
+    animation: fadeInetc 1s linear forwards;
+    animation-delay: 5.5s;
+}
+@keyframes fadeInetc
+{
+    0%
+    {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
