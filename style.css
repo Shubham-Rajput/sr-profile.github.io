@@ -180,3 +180,82 @@ section
         opacity: 1;
     }
 }
+.mypic
+{
+    opacity: 1;
+    width: 30%;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.mypic .box
+{
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #000; */
+}
+.mypic .box::before
+{
+    content: '';
+    position: absolute;
+    background: #03a9f4;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    transform: skew(2deg, 2deg);
+    z-index: -1;
+}
+.mypic .box img
+{
+    width: 100%;
+}
+.mypic::before
+{
+    content: '';
+    position: absolute;
+    background: #1e1e1e;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    transform-origin: top;
+    animation: picopen 1s ease-in-out forwards;
+    animation-delay: 3s;
+}
+@keyframes picopen
+{
+    0%
+    {
+        transform: scaleX(1);
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+    }
+    25%
+    {
+        transform: scaleX(1);
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+    }
+    30%
+    {
+        transform: scaleX(1);
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+    }
+    100%
+    {
+        /* top: 10px;
+        left: 100%;
+        right: 100%;
+        bottom: 10px; */
+        transform: scaleX(0);
+    }
+}
