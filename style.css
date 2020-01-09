@@ -106,6 +106,10 @@ section
     animation: revealtext 1s ease-in-out forwards;
     animation-delay: 3s;
 }
+.bannerText h3::before
+{
+    animation-delay: 4s;
+}
 @keyframes revealtext
 {
     0%
